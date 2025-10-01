@@ -2,6 +2,11 @@
 
 A full-stack web application inspired by Airbnb, built with the MERN stack (MongoDB, Express.js, React, and Node.js). This project demonstrates how to create a modern booking platform where users can browse listings, make reservations, and manage their stays.
 
+## 🚀 Deployed
+
+**Deployed** [here](https://airbnb-mern-clone-e0zx.onrender.com) using **Render**
+
+
 ## Features
 
 - **User Authentication:** Sign up, log in, and secure sessions.
