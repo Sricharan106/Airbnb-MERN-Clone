@@ -1,0 +1,28 @@
+<% layout('./layouts/boilerplate.ejs') -%> <% if (allListings.length > 0) {%>
+<div class="cards">
+  <% for(let listing of allListings) { %>
+  <a href="/listing/<%= listing._id %>"
+    ><div class="card-">
+      <div class="card-img">
+        <img src="<%= listing.image.url %>" alt="" /><button class="fa-btn">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+      </div>
+      <div class="card--body">
+        <div class="card-details">
+          <p>
+            <b><%= listing.title %></b> <br />
+            &#8377;<%= listing.price ?
+            Number(listing.price).toLocaleString("en-IN") : "N/A" %>/Night
+            <i class="tax-info">+18% Gst</i>
+          </p>
+        </div>
+      </div>
+    </div></a
+  >
+  <% } %>
+</div>
+
+<% }else{ %>
+<p>No result found for "<%= query %>"</p>
+<% } %>
